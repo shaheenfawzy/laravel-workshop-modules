@@ -12,7 +12,7 @@
             <directory>tests/Feature</directory>
         </testsuite>
         <testsuite name="Modules">
-            <directory>Modules/*/Feature</directory>
+            <directory>modules/*/tests/Feature</directory>
         </testsuite>
     </testsuites>
     <source>
@@ -22,6 +22,7 @@
     </source>
     <php>
         <env name="APP_ENV" value="testing"/>
+        <env name="APP_KEY" value="base64:3Lh4pIh2s8H2LxQ2yEw7bW7q9XG4c3Qw1aZk9N5m2lE="/>
         <env name="APP_MAINTENANCE_DRIVER" value="file"/>
         <env name="BCRYPT_ROUNDS" value="4"/>
         <env name="BROADCAST_CONNECTION" value="null"/>
