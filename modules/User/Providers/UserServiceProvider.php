@@ -8,6 +8,6 @@ class UserServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        // load resources from here
+        $this->loadMigrationsFrom(__DIR__ . '../database/migrations');
     }
 }
